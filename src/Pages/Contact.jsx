@@ -1,23 +1,32 @@
-import React from "react";
+import { Container } from 'react-bootstrap';
+import { GitHub, LinkedIn, Email } from '@mui/icons-material';
 
 export default function Contact() {
     return(
-        <Container style={{ maxWidth: "600px", marginTop: "50px" }}>
+        <Container style={{ marginTop: "80px", textAlign: "center" }}>
             <h2>Contact Me</h2>
-            <Form>
-                <Form.Group className="mb-3">
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" placeholder="Enter your Email"/>
-                </Form.Group>
+            <p>Email : deval.back.js129@gmail.com</p>
 
-                <Form.Group className="mb-3">
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" placeholder="Enter your Email"/>
-                </Form.Group>
+            <div style={{
+                fontSize: "40px",
+                marginTop: "20px"
+            }}>
+                <a href="https://github.com/DevalGarg129/" target='_blank'>
+                    <GitHub style={{ margin: "10px"}} />
+                </a>
 
-                <Button variant="primary">Submit</Button>
-            </Form>
+                <a href="https://www.linkedin.com/in/deval-garg-b5431a280/" target='_blank'>
+                    <LinkedIn style={{ margin: "10px"}}/>
+                </a>
+
+                <a href="mailto: deval.back.js129@gmail.com">
+                    <Email style={{ margin: "10px" }}/>
+                </a>
+
+            </div>
         </Container>
     )
 }
+
+
 
