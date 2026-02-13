@@ -1,5 +1,5 @@
 import { Container, Typography, Grid, Chip, Box } from "@mui/material";
-import { Java, Storage, Cloud, Code, Memory } from "@mui/icons-material";
+import { Storage, Cloud, Code, Memory } from "@mui/icons-material";
 
 export default function About() {
   return (

@@ -1,4 +1,4 @@
-import { Button, Typography, Container, Box } from "@mui/material";
+import { Button, Typography, Container } from "@mui/material";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
@@ -7,8 +7,10 @@ export default function Home() {
 
   return (
     <Container
+      maxWidth="md"
       sx={{
         minHeight: "100vh",
+        width: "100%",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -16,7 +18,6 @@ export default function Home() {
         textAlign: "center"
       }}
     >
-      {/* Animated Heading */}
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -27,7 +28,6 @@ export default function Home() {
         </Typography>
       </motion.div>
 
-      {/* Animated Subtitle */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -38,7 +38,6 @@ export default function Home() {
         </Typography>
       </motion.div>
 
-      {/* Animated Button */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -48,10 +47,10 @@ export default function Home() {
           variant="contained"
           color="success"
           size="large"
-          sx={{ mt: 4, px: 4 }}
+          sx={{ mt: 4, px: 5, borderRadius: "30px" }}
           onClick={() => navigate("/menu")}
         >
-          View
+          Explore Portfolio 🚀
         </Button>
       </motion.div>
     </Container>

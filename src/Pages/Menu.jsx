@@ -1,81 +1,101 @@
-import {
-  Grid,
-  Card,
-  CardContent,
-  CardMedia,
-  CardActions,
-  Button,
-  Paper,
-  Typography,
-} from "@mui/material";
-import { useNavigate } from "react-router";
+import { Paper, Typography, Box } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 import { Person, Work, Email } from "@mui/icons-material";
-import { motion } from "motion/react";
 
-const options = [
-  {
-    title: "Projects",
-    desc: "Explore my Projects",
-    path: "/Section",
-    icon: <Work fontSize="large" />,
-  },
-  {
-    title: "About Me",
-    desc: "Learn About Me",
-    path: "/About",
-    icon: <Person fontSize="large" />,
-  },
-  {
-    title: "Contact",
-    desc: "Get in Touch",
-    path: "/Contact",
-    icon: <Email fontSize="large" />,
-  },
-];
-
-function Menu() {
+export default function Menu() {
   const navigate = useNavigate();
 
   return (
-    <Grid
-      container
-      spacing={4}
+    <Box
       sx={{
-        p: 4,
-        textAlign: "center",
-        cursor: "pointer",
-        transition: "all 0.3s ease",
-        "&:hover": {
-          transform: "scale(1.05)",
-          backgroundColor: "#f0f0f0",
-          color: "#333",
-          boxShadow: 8,
-        },
+        height: "100vh",
+        width: "100vw",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        gap: 4,
       }}
     >
-      {options.map((opt, i) => (
-        <Grid item xs={12} sm={6} md={4} key={i}>
-          <Paper
-            elevation={3}
-            onClick={() => navigate(opt.path)}
-            sx={{
-              p: 4,
-              textAlign: "center",
-              cursor: "pointer",
-              transition: "transform 0.2s",
-              "&:hover": {
-                transform: "scale(1.5)",
-                backgroundColor: "#1976d2",
-                color: "white",
-              },
-            }}
-          >
-            <Typography variant="h5">{opt.title}</Typography>
-          </Paper>
-        </Grid>
-      ))}
-    </Grid>
+      {/* Projects */}
+      <Paper
+        elevation={6}
+        onClick={() => navigate("/section")}
+        sx={{
+          width: 220,
+          height: 130,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          borderRadius: "18px",
+          cursor: "pointer",
+          transition: "0.3s",
+          "&:hover": {
+            transform: "scale(1.08)",
+            backgroundColor: "#198754",
+            color: "white",
+          },
+        }}
+      >
+        <Work fontSize="large" />
+        <Typography variant="h6" sx={{ mt: 1 }}>
+          Projects
+        </Typography>
+      </Paper>
+
+      {/* About */}
+      <Paper
+        elevation={6}
+        onClick={() => navigate("/about")}
+        sx={{
+          width: 220,
+          height: 130,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          borderRadius: "18px",
+          cursor: "pointer",
+          transition: "0.3s",
+          "&:hover": {
+            transform: "scale(1.08)",
+            backgroundColor: "#198754",
+            color: "white",
+          },
+        }}
+      >
+        <Person fontSize="large" />
+        <Typography variant="h6" sx={{ mt: 1 }}>
+          About Me
+        </Typography>
+      </Paper>
+
+      {/* Contact */}
+      <Paper
+        elevation={6}
+        onClick={() => navigate("/contact")}
+        sx={{
+          width: 220,
+          height: 130,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          borderRadius: "18px",
+          cursor: "pointer",
+          transition: "0.3s",
+          "&:hover": {
+            transform: "scale(1.08)",
+            backgroundColor: "#198754",
+            color: "white",
+          },
+        }}
+      >
+        <Email fontSize="large" />
+        <Typography variant="h6" sx={{ mt: 1 }}>
+          Contact
+        </Typography>
+      </Paper>
+    </Box>
   );
 }
-
-export default Menu;
