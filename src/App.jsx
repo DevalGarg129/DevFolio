@@ -1,29 +1,29 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { MyNavbar } from './Components/MyNavbar.jsx';
-import About from "./Pages/About.jsx";
-import Home from "./Pages/Home.jsx";
-import Contact from './Pages/Contact.jsx';
-import Section from './Pages/Section.jsx';
-import Menu from './Pages/Menu.jsx';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
+
+import Navbar from "./Components/Navbar";
+
+import Home from "./Pages/Home";
+import Menu from "./Pages/Menu";
+import About from "./Pages/About";
+import Section from "./Pages/Section";
+import Contact from "./Pages/Contact";
 
 function App() {
-
   return (
     <>
-      <BrowserRouter>
-        <MyNavbar/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/about' element={<About/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-          <Route path='/section' element={<Section/>}/>
-          <Route path='/Menu' element={<Menu/>}/>
-        </Routes>
-      </BrowserRouter>
+      {/* Navbar always on top */}
+      <Navbar />
+
+      {/* Pages */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/section" element={<Section />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
