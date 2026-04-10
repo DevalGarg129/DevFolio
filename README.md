@@ -1,4 +1,4 @@
-# 🚀 DevFolio — Experiment 4
+# 🚀 DevFolio 
 
 A modern **Single Page Application (SPA) Portfolio Website** built using **React.js**, **React Router DOM**, **Vite**, and advanced React hooks.
 
@@ -11,8 +11,6 @@ Personal portfolio website with 5 pages and global state management using React'
 **Deployment:** `{uid}-4-deval-garg.vercel.app`
 
 ---
-
-## ✨ Experiment 4 Changes
 
 ### 🆕 New Page — Skills & Experience (`/skills`)
 The main Experiment 4 addition — demonstrates all three required hooks in one cohesive page:
@@ -86,13 +84,7 @@ src/
 - Context API + useReducer + useMemo
 - Vanilla CSS (custom design system)
 - Google Fonts: Syne + Space Mono
-
----
-
-## 📸 Screenshots
-
-See `/screenshots` folder.
-
+  
 ---
 
 ## 🚀 Running Locally
