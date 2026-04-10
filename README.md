@@ -1,4 +1,4 @@
-# 🚀 DevFolio — Experiment 4
+# 🚀 DevFolio
 
 A modern **Single Page Application (SPA) Portfolio Website** built using **React.js**, **React Router DOM**, **Vite**, and advanced React hooks.
 
@@ -86,12 +86,6 @@ src/
 - Context API + useReducer + useMemo
 - Vanilla CSS (custom design system)
 - Google Fonts: Syne + Space Mono
-
----
-
-## 📸 Screenshots
-
-See `/screenshots` folder.
 
 ---
 
