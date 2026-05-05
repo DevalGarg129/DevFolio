@@ -42,11 +42,6 @@ export default function Home() {
               <span className="stat-num">{state.skills.length}</span>
               <span className="stat-label">Skills</span>
             </div>
-            <div className="stat-divider"></div>
-            <div className="stat">
-              <span className="stat-num">2+</span>
-              <span className="stat-label">Years Exp.</span>
-            </div>
           </div>
         </div>
 
