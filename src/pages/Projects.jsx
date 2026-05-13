@@ -53,10 +53,28 @@
       title: 'VenueFlow',
       desc: 'Google Prompt wars Project Which is Based on Smart Venue System ',
       tech: ['Node.js', 'Express', 'Docker', 'Reactjs'],
-      category: 'Full-Stacl',
+      category: 'Full-StacK',
       link: 'https://github.com/DevalGarg129/VenueFlow',
       featured: true,
     },
+    {
+      id: 7,
+      title: "DetectXr",
+      desc: "A Real Time Submission integrity and Behavioral Rish Analysis Engine",
+      tech: ['Node.js', 'Express', 'MongoDB', 'Axios'],
+      category: 'Backend',
+      link: 'https://github.com/DevalGarg129/DetectXr',
+      featured: true,
+    },
+    {
+      id: 8,
+      title: "TradeLocker",
+      desc: "A Real Time Stock Trading Platform",
+      tech: ['Node.js', 'Express', 'MongoDB', 'WebSocket'],
+      category: 'Full-stack',
+      link: 'https://github.com/DevalGarg129/TradeLocker',
+      featured: true,
+    }
   ];
 
   const CATEGORIES = ['All', 'Frontend', 'Backend', 'Full Stack'];

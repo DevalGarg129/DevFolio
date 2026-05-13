@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { usePortfolio, ACTIONS } from '../context/PortfolioContext';
 import './Skills.css';
 
-const CATEGORIES = ['All', 'Frontend', 'Backend', 'Database', 'DevOps'];
+const CATEGORIES = ['All', 'Frontend', 'Backend', 'Database', 'DevOps', 'Data Structures and Algorithms'];
 
 const categoryColors = {
   Frontend: '#00c853',
@@ -41,8 +41,6 @@ export default function Skills() {
     <div className="page-wrapper">
       <div className="container section">
         <h2 className="section-title">Skills &amp; <span>Experience</span></h2>
-        <p className="section-subtitle">// skills_and_analytics.jsx — useContext + useReducer + useMemo</p>
-
         {/* Analytics Cards — useMemo */}
         <div className="analytics-row">
           <div className="analytics-card card">
@@ -155,7 +153,7 @@ export default function Skills() {
             </div>
 
             <div className="card hooks-card">
-              <h3 className="hooks-title">🧩 Exp 4 Hooks Used</h3>
+              <h3 className="hooks-title">🧩 ReduxJS Hooks Used</h3>
               <div className="hook-item">
                 <code>useContext</code>
                 <span>Global skills state, theme &amp; bookmarks shared across all pages</span>
